@@ -10,4 +10,5 @@ Suburb.destroy_all()
 Postcode.destroy_all()
 Service.destroy_all()
 User.destroy_all()
+Category.destroy_all()
 
