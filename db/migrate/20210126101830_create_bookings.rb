@@ -6,6 +6,7 @@ class CreateBookings < ActiveRecord::Migration[6.0]
       t.integer :phonenumber
       t.string :email
       t.string :address
+      t.string :string
       t.date :booking_date
       t.text :notes
       t.references :suburb, null: false, foreign_key: true

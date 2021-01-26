@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_26_074002) do
+ActiveRecord::Schema.define(version: 2021_01_26_101830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2021_01_26_074002) do
     t.integer "phonenumber"
     t.string "email"
     t.string "address"
+    t.string "string"
     t.date "booking_date"
     t.text "notes"
     t.bigint "suburb_id", null: false
@@ -32,19 +33,19 @@ ActiveRecord::Schema.define(version: 2021_01_26_074002) do
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "category"
+    t.string "category_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "postcodes", force: :cascade do |t|
-    t.string "postcode"
+    t.integer "postcode"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "services", force: :cascade do |t|
-    t.string "service"
+    t.string "service_name"
     t.string "price"
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -53,7 +54,7 @@ ActiveRecord::Schema.define(version: 2021_01_26_074002) do
   end
 
   create_table "suburbs", force: :cascade do |t|
-    t.string "suburb"
+    t.string "name"
     t.bigint "postcode_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
