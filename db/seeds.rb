@@ -9,6 +9,12 @@
 Suburb.destroy_all()
 Postcode.destroy_all()
 Service.destroy_all()
-User.destroy_all()
+Booking.destroy_all()
 Category.destroy_all()
 
+
+
+mowing = Category.create(category: "Mowing")
+gardening = Category.create(category: "Gardening and Landscaping")
+
+Service.create(service: "Small lawn (up to 350sqm)", price: 50, category: mowing)
