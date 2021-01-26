@@ -1,2 +1,5 @@
 ### Index method
 GET http://localhost:3000/services/
+
+### Index method
+GET http://localhost:3000/bookings/
