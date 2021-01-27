@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
     end
 
     def create
-        booking = Booking.Create(booking_params)
+        booking = Booking.create(booking_params)
 
         if booking.errors.any?
             render json: booking.errors, status: :unprocessable_entity

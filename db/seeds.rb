@@ -17,4 +17,22 @@ Category.destroy_all()
 mowing = Category.create(category: "Mowing")
 gardening = Category.create(category: "Gardening and Landscaping")
 
-Service.create(service: "Small lawn (up to 350sqm)", price: 50, category: mowing)
+Service.create(service: "Small lawn (up to 350sqm)", price: 60, category: mowing)
+Service.create(service: "Medium lawn (up to 650sqm)", price: 80, category: mowing)
+Service.create(service: "Large lawn (up to 1000sqm)", price: 110, category: mowing)
+Service.create(service: "More than 1000sqm", price: "Request quote", category: mowing)
+Service.create(service: "Slashing", price: "75 p/hr", category: mowing)
+Service.create(service: "Gardening regular", price: "70 p/hr", category: gardening)
+Service.create(service: "Fertilising (up to 350sqm yard)", price: 30, category: gardening)
+Service.create(service: "Fertilising (up to 650sqm yard)", price: 45, category: gardening)
+Service.create(service: "Fertilising (up to 1000sqm yard)", price: 60, category: gardening)
+Service.create(service: "Fertilising (more than 1000sqm)", price: "Request quote", category: gardening)
+Service.create(service: "Landscaping", price: "Request quote", category: gardening)
+Service.create(service: "Weed Control", price: "50 p/hr", category: gardening)
+Service.create(service: "Lawn aerating", price: "60 p/hr", category: gardening)
+
+
+
+
+
+
