@@ -14,3 +14,7 @@ https://github.com/Leanne2603/T3A2_B_frame/tree/main/src
 
 ### Deployed Backend Application URL using Heroku
 
+### Testing
+* Postman - initial testing phase
+* client.http - secondary testing phase
+
