@@ -3,3 +3,56 @@ GET http://localhost:3000/services/
 
 ### Index method
 GET http://localhost:3000/bookings/
+
+### Retrieving a booking with id
+GET http://localhost:3000/bookings/6
+
+### Successfully creating a new booking
+POST http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+    "first_name": "Peter",
+    "last_name": "Hunt",
+    "phonenumber": "0406865978",
+    "email": "p3t3@abc.net.au",
+    "address": "42 Jarvis Road",
+    "booking_date": "2021-02-16",
+    "suburb_id": "45",
+    "service_id": "24" 
+}
+
+### Successfully edit a booking
+PUT http://localhost:3000/bookings/3
+Content-Type: application/json
+
+{
+    "booking_date": "2021-02-15" 
+}
+
+### Unsuccessfully editing a booking after authentication added
+PUT http://localhost:3000/bookings/4
+Content-Type: application/json
+
+{
+    "booking_date": "2021-02-23" 
+}
+
+### Successfully delete a booking
+DELETE http://localhost:3000/bookings/5
+Content-type: application/json
+
+### Validating data where presence is true
+POST http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+    "first_name": "Mark",
+    "last_name": "Hunter",
+    "phonenumber": "0405658974",
+    "email": "MarkH@123.net.au",
+    "address": "68 Jarvis Road",
+    "suburb_id": "45",
+    "service_id": "24" 
+}
+

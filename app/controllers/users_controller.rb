@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 
+    # sign in function using Knock gem for authentication. Finds by username and matches password to username
     def sign_in
         @user = User.find_by_username(params[:username])
         if @user && @user.authenticate(params[:password])

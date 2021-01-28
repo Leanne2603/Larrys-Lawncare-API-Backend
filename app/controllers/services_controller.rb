@@ -1,5 +1,5 @@
 class ServicesController < ApplicationController
-    before_action :authenticate_user
+    before_action :authenticate_user # only accessible by business owner
     before_action :set_service, only: [:show, :update, :destroy]
 
     def index
@@ -8,6 +8,7 @@ class ServicesController < ApplicationController
     end
 
     def create
+        # Creates a new service - user must be logged in for this function
         service = Service.create(service_params)
 
         if service.errors.any?
@@ -38,9 +39,10 @@ class ServicesController < ApplicationController
 
     private
     def service_params
-        return params.require(:service).permit(:service_name, :price, :category_id)
+        return params.require(:service).permit(:service_name, :price, :category_id) # references category so must have category ID
     end
 
+    # Finds the services - if not found, will render a 404 Not found error 
     def set_service
         begin
             @service = Service.find(params[:id])
