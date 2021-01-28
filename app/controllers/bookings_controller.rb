@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+    before_action :authenticate_user, except: [:create]
     before_action :set_booking, only: [:show, :update, :destroy]
 
     def index
