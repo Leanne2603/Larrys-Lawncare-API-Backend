@@ -42,3 +42,17 @@ Content-Type: application/json
 DELETE http://localhost:3000/bookings/5
 Content-type: application/json
 
+### Validating data where presence is true
+POST http://localhost:3000/bookings
+Content-Type: application/json
+
+{
+    "first_name": "Mark",
+    "last_name": "Hunter",
+    "phonenumber": "0405658974",
+    "email": "MarkH@123.net.au",
+    "address": "68 Jarvis Road",
+    "suburb_id": "45",
+    "service_id": "24" 
+}
+
