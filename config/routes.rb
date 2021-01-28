@@ -12,4 +12,7 @@ Rails.application.routes.draw do
     get '/bookings/:id', to: "bookings#show"
     put '/bookings/:id', to: 'bookings#update'
     delete '/bookings/:id', to: 'bookings#destroy'
+
+    post '/sign_in', to: 'users#sign_in'
+
 end
