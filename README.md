@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is for the RAILS api backend for a full stack web application using a React front end. 
 
-Things you may want to cover:
 
-* Ruby version
+### Repository for planning tools
+https://github.com/Leanne2603/T3A2_Full_Stack-App_Part-A
 
-* System dependencies
+### Repository for front end application 
+https://github.com/Leanne2603/T3A2_B_frame/tree/main/src
 
-* Configuration
+### Deployed Frontend Application URL using Netlify
 
-* Database creation
 
-* Database initialization
+### Deployed Backend Application URL using Heroku
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
