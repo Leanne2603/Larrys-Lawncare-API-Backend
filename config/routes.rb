@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     put '/bookings/:id', to: 'bookings#update'
     delete '/bookings/:id', to: 'bookings#destroy'
 
+    # sign in route for business owner only - no option for sign up at this point as only one user
     post '/sign_in', to: 'users#sign_in'
 
 end
