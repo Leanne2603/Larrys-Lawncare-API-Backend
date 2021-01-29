@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+    get '/suburbs', to: 'suburbs#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
     get '/services', to: 'services#index'
     post '/services', to: 'services#create'

@@ -56,3 +56,5 @@ Content-Type: application/json
     "service_id": "24" 
 }
 
+### Index method
+GET http://localhost:3000/suburbs/
