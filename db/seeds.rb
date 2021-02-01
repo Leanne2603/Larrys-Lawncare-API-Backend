@@ -11,6 +11,7 @@ Postcode.destroy_all()
 Service.destroy_all()
 Category.destroy_all()
 Booking.destroy_all()
+User.destroy_all()
 
 
 
@@ -80,6 +81,9 @@ suburb33 = Suburb.create(name: "Underwood", postcode: postcode4119)
 suburb34 = Suburb.create(name: "Greenslopes", postcode: postcode4120)
 suburb35 = Suburb.create(name: "Loreto Hill", postcode: postcode4120)
 suburb36 = Suburb.create(name: "Stones Corner", postcode: postcode4120)
+
+
+User.create(username: "Larry", email: "larry@larryslawncare.com.au", password: "password123", password_confirmation: "password123")
 
 
 
