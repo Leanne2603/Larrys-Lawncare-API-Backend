@@ -85,10 +85,10 @@ suburb36 = Suburb.create(name: "Stones Corner", postcode: postcode4120)
 
 User.create(username: "Larry", email: "larry@larryslawncare.com.au", password: "password123", password_confirmation: "password123")
 
-Booking.create(first_name: "John", last_name: "Smith", phonenumber: "0465258455", email: "johnsmith@abc.net.au", address: "123 Main Street", booking_date: "2021-02-15", suburb_id: suburb28, service_id: smalllawn)
-Booking.create(first_name: "Melissa", last_name: "Fans", phonenumber: "0436598555", email: "mel_f12@123.net.au", address: "535 Window Drive", booking_date: "2021-02-23", suburb_id: suburb34, service_id: smalllawn)
-Booking.create(first_name: "Sally", last_name: "Weathers", phonenumber: "0489625645", email: "sal42@abc.net.au", address: "56 Mountain Way", booking_date: "2021-02-16", suburb_id: suburb15, service_id: smalllawn)
-Booking.create(first_name: "Peter", last_name: "Hunt", phonenumber: "0406865978", email: "p3t3@abc.net.au", address: "42 Jarvis Road", booking_date: "2021-02-22", suburb_id: suburb15, service_id: smalllawn)
+Booking.create(first_name: "John", last_name: "Smith", phonenumber: "0465258455", email: "johnsmith@abc.net.au", address: "123 Main Street", booking_date: "2021-02-15", suburb: suburb28, service: smalllawn)
+Booking.create(first_name: "Melissa", last_name: "Fans", phonenumber: "0436598555", email: "mel_f12@123.net.au", address: "535 Window Drive", booking_date: "2021-02-23", suburb: suburb34, service: smalllawn)
+Booking.create(first_name: "Sally", last_name: "Weathers", phonenumber: "0489625645", email: "sal42@abc.net.au", address: "56 Mountain Way", booking_date: "2021-02-16", suburb: suburb15, service: smalllawn)
+Booking.create(first_name: "Peter", last_name: "Hunt", phonenumber: "0406865978", email: "p3t3@abc.net.au", address: "42 Jarvis Road", booking_date: "2021-02-22", suburb: suburb15, service: smalllawn)
 
 
 
