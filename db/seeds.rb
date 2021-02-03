@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Postcode.destroy_all()
+Booking.destroy_all()
 Suburb.destroy_all()
+Postcode.destroy_all()
 Service.destroy_all()
 Category.destroy_all()
-Booking.destroy_all()
 User.destroy_all()
 
 
@@ -84,8 +84,6 @@ suburb36 = Suburb.create(name: "Stones Corner", postcode: postcode4120)
 
 
 User.create(username: "Larry", email: "larry@larryslawncare.com.au", password: "password123", password_confirmation: "password123")
-
-Booking.destroy_all()
 
 Booking.create(first_name: "John", last_name: "Smith", phonenumber: "0465258455", email: "johnsmith@abc.net.au", address: "123 Main Street", booking_date: "2021-02-15", suburb_id: 38, service_id: 22)
 Booking.create(first_name: "Melissa", last_name: "Fans", phonenumber: "0436598555", email: "mel_f12@123.net.au", address: "535 Window Drive", booking_date: "2021-02-23", suburb_id: 42, service_id: 24)
