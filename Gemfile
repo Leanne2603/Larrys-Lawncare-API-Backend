@@ -29,6 +29,7 @@ gem 'rack-cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "rspec-rails", "~> 4.0"
 end
 
 group :development do
@@ -43,3 +44,5 @@ gem "dotenv-rails", "~> 2.7"
 gem "pgreset", "~> 0.3"
 
 gem "rspec", "~> 3.10"
+
+gem "rubocop", "~> 1.9", require: false

@@ -7,7 +7,7 @@ class UsersController < ApplicationController
            auth_token = Knock::AuthToken.new payload: {sub: @user.id}
            render json: {username: @user.username, jwt: auth_token.token}, status: 200
         else
-            render json: {error: "Incorrect username or password"}, status: 404
+            render json: {error: "Incorrect username or password"}, status: 401
         end
     end
 

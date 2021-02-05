@@ -21,10 +21,12 @@ https://trello.com/b/uraS52xC/t3a2-react-app
 ### Testing
 * Postman - initial testing phase
 * client.http - secondary testing phase
+* rspec-rails - final formal testing
 
 ### Gems
 * Dotenv - to store postgresql username/password details
 * Bcrypt - for password encryption
 * Rack-cors - cross origin resource sharing - allows for api to be used with front end
 * Knock - user authentication
+* Rspec-rails - Testing
 
