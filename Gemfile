@@ -41,3 +41,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "dotenv-rails", "~> 2.7"
 
 gem "pgreset", "~> 0.3"
+
+gem "rspec", "~> 3.10"
