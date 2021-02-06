@@ -58,3 +58,12 @@ Content-Type: application/json
 
 ### Index method
 GET http://localhost:3000/suburbs/
+
+### Sign in with correct details
+POST http://localhost:4000/sign_in
+Content-Type: application/json
+
+{
+    "username": "Larry",
+    "password": "password123"
+}
