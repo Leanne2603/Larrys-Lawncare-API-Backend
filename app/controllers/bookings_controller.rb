@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
-    before_action :authenticate_user, except: [:create] # Application only allows for a user signed in to access all CRUD functions
+    # TODO: Waiting on front end user authentication to be completed before implementing authenticate user action
+    # before_action :authenticate_user, except: [:create] # Application only allows for a user signed in to access all CRUD functions
     before_action :set_booking, only: [:show, :update, :destroy]
 
     def index

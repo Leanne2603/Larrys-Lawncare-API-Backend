@@ -9,7 +9,7 @@ Prior to using this repo, run a bundle install to install the latest dependencie
 https://github.com/Leanne2603/T3A2_Full_Stack-App_Part-A
 
 ### Repository for front end application 
-https://github.com/Leanne2603/T3A2_B_frame/tree/main/src
+https://github.com/Leanne2603/T3A2_B_frame
 
 ### Deployed Frontend Application URL using Netlify
 https://larryslawncare.netlify.app/

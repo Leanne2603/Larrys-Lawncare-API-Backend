@@ -1,5 +1,6 @@
 class ServicesController < ApplicationController
-    before_action :authenticate_user, except: [:index] # only accessible by business owner except for full services list
+        # TODO: Waiting on front end user authentication to be completed before implementing authenticate user action
+    # before_action :authenticate_user, except: [:index] # only accessible by business owner except for full services list
     before_action :set_service, only: [:show, :update, :destroy]
 
     def index
