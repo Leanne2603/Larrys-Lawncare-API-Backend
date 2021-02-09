@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-    before_action :authenticate_user, except: [:create] # Application only allows for a user signed in to access all CRUD functions
+    # before_action :authenticate_user, except: [:create] # Application only allows for a user signed in to access all CRUD functions
     before_action :set_booking, only: [:show, :update, :destroy]
 
     def index
@@ -29,7 +29,7 @@ class BookingsController < ApplicationController
         if @booking.errors.any?
             render json: @booking.errors, status: :unprocessable_entity
         else
-            render json: @booking, status: 201
+            render json: @booking, status: 204
         end
     end
 

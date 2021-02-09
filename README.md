@@ -2,6 +2,8 @@
 
 This repository is for the RAILS api backend for a full stack web application using a React front end. 
 
+Prior to using this repo, run a bundle install to install the latest dependencies.
+
 
 ### Repository for planning tools
 https://github.com/Leanne2603/T3A2_Full_Stack-App_Part-A
